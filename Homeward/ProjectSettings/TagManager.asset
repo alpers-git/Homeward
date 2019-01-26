@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Elbow
+  - hud
   layers:
   - Default
   - TransparentFX

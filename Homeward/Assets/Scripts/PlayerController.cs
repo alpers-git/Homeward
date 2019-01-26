@@ -14,7 +14,10 @@ public class PlayerController : MonoBehaviour {
     float xAmount;
     float yAmount;
 
-    public GameObject gun;
+    public GameObject gunTip;
+    public GameObject bulletPrefab;
+    public float bulletSpeed = 4f;
+    public float bulletLife = 3f;
 
     void Start()
     {
@@ -46,15 +49,27 @@ public class PlayerController : MonoBehaviour {
         transform.eulerAngles = new Vector3(30, 0, Mathf.Sin((transform.position.x + transform.position.z) * 1) * 5);
 
        gameObject.transform.position = restrictedPos;
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                Vector3 bulletDirection = hit.point - transform.position;
+                bulletDirection.Normalize();
+                bulletDirection.y = 0;
+                Shoot(bulletDirection);
+            }
+            //Debug.Log(gameObject.transform.rotation.x + " " + gameObject.transform.rotation.y);
+        }
     }
 
-    private void OnMouseDown()
+    void Shoot(Vector3 dir)
     {
-        Shoot(Input.mousePosition);
-    }
-
-    void Shoot(Vector3 vec)
-    {
-
+        Vector3 pos = new Vector3(gunTip.transform.position.x, 0f, gunTip.transform.position.z);
+        GameObject bullet = Instantiate(bulletPrefab, pos, transform.rotation);
+        bullet.GetComponent<Rigidbody>().velocity = dir * bulletSpeed;
     }
 }

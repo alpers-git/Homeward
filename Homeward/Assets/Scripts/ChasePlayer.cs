@@ -35,7 +35,7 @@ public class ChasePlayer : MonoBehaviour {
         animator.SetFloat("X", xAmount, 0.1f, Time.deltaTime);
         animator.SetFloat("Y", yAmount, 0.1f, Time.deltaTime);
 
-
+        //***********
         direction = (target.transform.position - gameObject.transform.position);
         direction.Normalize();
         direction = Matrix4x4.Rotate(Quaternion.Euler(new Vector3(-30,0,0))) * new Vector4(direction.x, direction.y, direction.z, 1);
