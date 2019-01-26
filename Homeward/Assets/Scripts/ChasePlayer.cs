@@ -13,6 +13,8 @@ public class ChasePlayer : MonoBehaviour {
     float xAmount;
     float yAmount;
 
+    public float forceMultip = 3.0f;
+
     // Use this for initialization
     void Start ()
     {
@@ -51,6 +53,21 @@ public class ChasePlayer : MonoBehaviour {
         if (target==null)
         {
             Debug.Log("target not found");
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            other.GetComponent<HealthManager>().TakeDamage(1);
+            GetComponent<HealthManager>().TakeDamage(1);
+
+            Vector3 forceDir = transform.position - other.transform.position;
+            forceDir.Normalize();
+
+            GetComponent<Transform>().position = GetComponent<Transform>().position + forceDir * forceMultip;
+
         }
     }
 
