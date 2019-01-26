@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class OpacityChanger : MonoBehaviour
 {
     public float STEP;
+    public float low;
+    public float high;
 
     private Image image;
     private bool ascending;
@@ -15,7 +17,7 @@ public class OpacityChanger : MonoBehaviour
     {
         image = GetComponent<Image>();
         Color c = image.color;
-        c.a = 0.8f;
+        c.a = high;
         image.color = c;
     }
 
@@ -27,34 +29,38 @@ public class OpacityChanger : MonoBehaviour
         if(ascending)
         {
             alpha += STEP;
-            if (alpha >= 0.8f)
+            if (alpha >= high)
             {
                 ascending = false;
-                alpha = 0.8f;
+                alpha = high;
             }
         }
         else
         {
             alpha -= STEP;
-            if (alpha <= 0.6f)
+            if (alpha <= low)
             {
                 ascending = true;
-                alpha = 0.6f;
+                alpha = low;
             }
         }
         newColor.a = alpha;
         image.color = newColor;
+        Debug.Log(image.color.a + " " + ascending);
     }
 
-    IEnumerator FadeTo(float aValue, float aTime)
+    public void StartAnimation(float start, float end, float low, float high, float step = 0)
     {
-        float alpha = image.color.a;
-        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+        image = GetComponent<Image>();
+        Color c = image.color;
+        c.a = start;
+        image.color = c;
+        this.low = low;
+        this.high = high;
+        this.ascending = true;
+        if(step != 0)
         {
-            Color newColor = image.color;
-            newColor.a = Mathf.Lerp(alpha, aValue, t);
-            image.color = newColor;
-            yield return null;
+            this.STEP = step;
         }
     }
 }

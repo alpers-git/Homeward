@@ -13,6 +13,7 @@ public class HealthManager : MonoBehaviour
     public Image rightEmpty;
     public bool isHenry;
     public float invulTime;
+    public Transform gameOverUI;
 
     private float nextTimeToTakeDamage;
     public int health = 3;
@@ -63,6 +64,11 @@ public class HealthManager : MonoBehaviour
                         leftEmpty.gameObject.SetActive(true);
                         middleEmpty.gameObject.SetActive(true);
                         rightEmpty.gameObject.SetActive(true);
+                        for(int i = 0; i < gameOverUI.childCount; i++)
+                        {
+                            Component child = gameOverUI.GetChild(i);
+                            child.GetComponent<OpacityChanger>().StartAnimation(0.0f, 1.0f, 0.7f, 1.0f, 0.005f);
+                        }
                         break;
                     default:
                         break;
