@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour {
     float xAmount;
     float yAmount;
 
+    public GameObject gun;
+
     void Start()
     {
     }
@@ -44,5 +46,15 @@ public class PlayerController : MonoBehaviour {
         transform.eulerAngles = new Vector3(30, 0, Mathf.Sin((transform.position.x + transform.position.z) * 1) * 5);
 
        gameObject.transform.position = restrictedPos;
+    }
+
+    private void OnMouseDown()
+    {
+        Shoot(Input.mousePosition);
+    }
+
+    void Shoot(Vector3 vec)
+    {
+
     }
 }

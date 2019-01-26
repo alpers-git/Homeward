@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraTracker.cs" />
+    <Compile Include="Assets\Scripts\ChaseandShootTarget.cs" />
     <Compile Include="Assets\Scripts\ChasePlayer.cs" />
     <Compile Include="Assets\Scripts\MoveJoint.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
