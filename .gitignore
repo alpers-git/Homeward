@@ -1,0 +1,14 @@
+
+Homeward/Temp/
+
+Homeward/Library/ShaderCache/
+
+Homeward/Library/StateCache/
+
+Homeward/Library/metadata/
+
+Homeward/Assembly-CSharp\.csproj
+
+*.log
+
+Homeward/Library/ScriptAssemblies/
