@@ -337,7 +337,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &203219083
 MonoBehaviour:
@@ -520,9 +520,16 @@ MonoBehaviour:
   - {fileID: 402218272, guid: 618cb3f542e123c4cbcc7e37aef30fe2, type: 3}
   - {fileID: 276787939, guid: e97f0d59ed291f449b63aebd8cd40bbb, type: 3}
   - {fileID: 5789911959947113829, guid: f2fd9ebf633f09543895b4aede8a3e03, type: 3}
+  doorColliders:
+  - {fileID: 203219081}
+  - {fileID: 1288346948}
+  - {fileID: 509999230}
   maxBoundaries: {x: 24, y: 0, z: 39}
   minBoudaries: {x: -24, y: 0, z: -5}
   Player: {fileID: 990820897}
+  bossroom: {fileID: 2807824323238104262, guid: 3c028ad39847c60419483f0de151db22,
+    type: 3}
+  boss: {fileID: 1816891241387702576, guid: 92bc254e05c291b489a0688a27521646, type: 3}
   numOfWavesPerRoom: 2
   healthPickupSpawnInterval: 5
 --- !u!4 &302829807
@@ -537,7 +544,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410155800
 GameObject:
@@ -693,7 +700,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &509999232
 MonoBehaviour:
@@ -1436,7 +1443,7 @@ PrefabInstance:
     - target: {fileID: 3726618554528889525, guid: a585f41154badde4fa345530b8c3b95d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3726618554528889525, guid: a585f41154badde4fa345530b8c3b95d,
         type: 3}
@@ -1549,6 +1556,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 618cb3f542e123c4cbcc7e37aef30fe2, type: 3}
+--- !u!65 &1288346948
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400274932}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 10, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1288346949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400274932}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.32, y: 4.15, z: 39.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1288346950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400274932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d27ac0212ad2620428067628b7540af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorNum: 1
 --- !u!1 &1400274932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,46 +1614,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1288346948
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288346947}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 10, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1288346949
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288346947}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.32, y: 4.15, z: 39.11}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1288346950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288346947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d27ac0212ad2620428067628b7540af2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorNum: 1
 --- !u!1 &1529624292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,6 +2003,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Alien Enemy 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789911959947113829, guid: f2fd9ebf633f09543895b4aede8a3e03,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5075790034709447478, guid: f2fd9ebf633f09543895b4aede8a3e03,
         type: 3}

@@ -13,8 +13,11 @@ public class GameManager : MonoBehaviour
     public GameObject healthUp;
     public GameObject[] rooms;
     public GameObject[] Enemies;
+    public BoxCollider[] doorColliders;
     public Vector3 maxBoundaries, minBoudaries;
     public GameObject Player;
+    public GameObject bossroom;
+    public GameObject boss;
 
     public int numOfWavesPerRoom;
     public float healthPickupSpawnInterval;
@@ -28,7 +31,6 @@ public class GameManager : MonoBehaviour
     private bool areDoorsUnlocked;
     private GameObject currentRoom;
     private int lastDoor = 1;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -41,25 +43,44 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("UPDATE");
-        if (numOfWavesPerRoom >= currentWave)
+        if (roomNum < 10)
         {
-            //Debug.Log("numOfWavesPerRoom > currentWave");
-            if (Enemywave.Count == 0)
+            if (numOfWavesPerRoom >= currentWave)
             {
-                //Debug.Log("Spawn Wave");
-                SpawnWave();
+                //Debug.Log("numOfWavesPerRoom > currentWave");
+                if (Enemywave.Count == 0)
+                {
+                    //Debug.Log("Spawn Wave");
+                    SpawnWave();
+                }
+                if (Time.time >= lastHealthPickupTime && isHealthPickupPickedUp)
+                {
+                    //Debug.Log("Spawn HP");
+                    SpawnHealthPickup();
+                }
             }
-            if(Time.time >= lastHealthPickupTime && isHealthPickupPickedUp)
+            else
             {
-                //Debug.Log("Spawn HP");
-                SpawnHealthPickup();
+                //Debug.Log("Unlock Doors");
+                UnlockDoors();
             }
         }
         else
         {
-            //Debug.Log("Unlock Doors");
-            UnlockDoors();
+            SpawnBossRoom();
+        }
+        //Debug.Log("UPDATE");
+        
+    }
+
+    private void SpawnBossRoom()
+    {
+        Destroy(currentRoom);
+        currentRoom = Instantiate(bossroom, new Vector3(-8.7627f, -63.050f, 114.4918f), Quaternion.identity);
+        Instantiate(Enemies[Random.Range(0, Enemies.Length)], new Vector3(8.5f, 0, -80), Quaternion.Euler(30, 0, 0));
+        for(int i = 0; i < doorColliders.Length; i++)
+        {
+            doorColliders[i].gameObject.SetActive(false);
         }
     }
 
