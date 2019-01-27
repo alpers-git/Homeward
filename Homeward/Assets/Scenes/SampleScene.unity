@@ -181,6 +181,7 @@ MonoBehaviour:
   m_UseSpriteMesh: 0
 --- !u!222 &149620323
 CanvasRenderer:
+<<<<<<< HEAD
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -238,6 +239,8 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &183903398
 MeshFilter:
+=======
+>>>>>>> master
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
