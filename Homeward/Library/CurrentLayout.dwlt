@@ -212,14 +212,14 @@ MonoBehaviour:
     height: 443
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
   - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,7 +323,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -551,6 +551,12 @@ MonoBehaviour:
     - {fileID: 1102725609520531956, guid: 57034618d5583924eb1a218f99da6238, type: 2}
     - {fileID: 1107765173290346900, guid: 3d5865eb95eaaba499d0401a9b15b385, type: 2}
     - {fileID: 1102685213074667522, guid: 3d5865eb95eaaba499d0401a9b15b385, type: 2}
+    - {fileID: 1107919360857207776, guid: dade9e84aa630cb49accb3b089dea724, type: 2}
+    - {fileID: 1102971352263412844, guid: dade9e84aa630cb49accb3b089dea724, type: 2}
+    - {fileID: 1107844760187314102, guid: 577b849a30031274f861d59e31e4393f, type: 2}
+    - {fileID: 1102176871715152612, guid: 577b849a30031274f861d59e31e4393f, type: 2}
+    - {fileID: 1107296136373279954, guid: c47b7454982656041a83d26029df6e74, type: 2}
+    - {fileID: 1102347087944239310, guid: c47b7454982656041a83d26029df6e74, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.55733335
       e01: 0
@@ -680,6 +686,102 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 0.70757043
+      e01: 0
+      e02: 0
+      e03: -51.39722
+      e10: 0
+      e11: 0.70757043
+      e12: 0
+      e13: 16.05524
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.41576076
+      e01: 0
+      e02: 0
+      e03: -15.614489
+      e10: 0
+      e11: 0.41576076
+      e12: 0
+      e13: 52.60621
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.44
+      e01: 0
+      e02: 0
+      e03: -7
+      e10: 0
+      e11: 0.44
+      e12: 0
+      e13: 81.7
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1.049941
+      e01: 0
+      e02: 0
+      e03: 160.1915
+      e10: 0
+      e11: 1.049941
+      e12: 0
+      e13: 49.663483
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.44
+      e01: 0
+      e02: 0
+      e03: -7
+      e10: 0
+      e11: 0.44
+      e12: 0
+      e13: 81.7
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.433722
+      e01: 0
+      e02: 0
+      e03: 131.53156
+      e10: 0
+      e11: 0.433722
+      e12: 0
+      e13: 96.99669
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 9100000, guid: fa695c0b6e0bc74488609fceb2eb997f,
     type: 2}
@@ -738,7 +840,7 @@ MonoBehaviour:
     m_Folders:
     - Assets/Prefabs/Rooms
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 71
   m_LastFolders:
   - Assets/Prefabs/Rooms
   m_LastFoldersGridSize: -1

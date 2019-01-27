@@ -64,9 +64,6 @@
     <Compile Include="Assets\Scripts\CameraTracker.cs" />
     <Compile Include="Assets\Scripts\ChaseandShootTarget.cs" />
     <Compile Include="Assets\Scripts\ChasePlayer.cs" />
-    <Compile Include="Assets\Scripts\DeleteBullets.cs" />
-    <Compile Include="Assets\Scripts\DoorManager.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
     <Compile Include="Assets\Scripts\HealthPickup.cs" />
     <Compile Include="Assets\Scripts\HUDBackgroundOpacityChanger.cs" />
@@ -80,6 +77,7 @@
     <Compile Include="Assets\Scripts\TrackMouse.cs" />
     <Compile Include="Assets\Scripts\TrackPlayer.cs" />
     <Compile Include="Assets\Scripts\TrackTarget.cs" />
+    <Compile Include="Assets\SeekPlayer.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Dev/Github/Homeward/Homeward/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
