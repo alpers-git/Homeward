@@ -61,7 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\ButtonOnHover.cs" />
     <Compile Include="Assets\Scripts\CameraTracker.cs" />
+    <Compile Include="Assets\Scripts\CanvasController.cs" />
     <Compile Include="Assets\Scripts\ChaseandShootTarget.cs" />
     <Compile Include="Assets\Scripts\ChasePlayer.cs" />
     <Compile Include="Assets\Scripts\DeleteBullets.cs" />
@@ -77,11 +79,11 @@
     <Compile Include="Assets\Scripts\ObstacleHandler.cs" />
     <Compile Include="Assets\Scripts\OpacityChanger.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\SeekPlayer.cs" />
     <Compile Include="Assets\Scripts\ShotgunChase.cs" />
     <Compile Include="Assets\Scripts\TrackMouse.cs" />
     <Compile Include="Assets\Scripts\TrackPlayer.cs" />
     <Compile Include="Assets\Scripts\TrackTarget.cs" />
-    <Compile Include="Assets\SeekPlayer.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Dev/Github/Homeward/Homeward/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
