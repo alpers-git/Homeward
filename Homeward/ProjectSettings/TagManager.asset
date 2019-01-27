@@ -8,6 +8,7 @@ TagManager:
   - hud
   - Enemy
   - Bullet
+  - Level
   layers:
   - Default
   - TransparentFX

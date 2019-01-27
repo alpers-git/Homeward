@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\ChaseandShootTarget.cs" />
     <Compile Include="Assets\Scripts\ChasePlayer.cs" />
     <Compile Include="Assets\Scripts\DeleteBullets.cs" />
+    <Compile Include="Assets\Scripts\DoorManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
     <Compile Include="Assets\Scripts\HealthPickup.cs" />
     <Compile Include="Assets\Scripts\HUDBackgroundOpacityChanger.cs" />

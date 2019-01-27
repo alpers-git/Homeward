@@ -194,8 +194,8 @@ GameObject:
   m_Component:
   - component: {fileID: 520679586}
   m_Layer: 0
-  m_Name: Door
-  m_TagString: Untagged
+  m_Name: Door2
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -434,7 +434,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f2736728cd9f4294887f57092a99391e, type: 2}
+  - {fileID: 2100000, guid: 82e9136c2442f9a4da902ac8352aa4bd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -937,8 +937,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1391908563831121360}
   m_Layer: 0
-  m_Name: Door (1)
-  m_TagString: Untagged
+  m_Name: Door0
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1336,8 +1336,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8238991772618563489}
   m_Layer: 0
-  m_Name: Initial Room 1
-  m_TagString: Untagged
+  m_Name: Room1
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1684,8 +1684,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7568126715411649184}
   m_Layer: 0
-  m_Name: Door (2)
-  m_TagString: Untagged
+  m_Name: Door1
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HealthPickup : MonoBehaviour
 {
+    private const string GAME_MASTER_STRING = "GameMaster";
 
     private float STEP = 0.02f;
     private bool ascending = true;
@@ -42,6 +43,7 @@ public class HealthPickup : MonoBehaviour
             if(hm.health < 3)
             {
                 hm.Heal();
+                GameObject.Find(GAME_MASTER_STRING).GetComponent<GameManager>().HealthPickupPickedUp();
                 Destroy(gameObject);
             }
         }

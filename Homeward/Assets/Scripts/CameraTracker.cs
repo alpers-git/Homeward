@@ -74,7 +74,6 @@ public class CameraTracker : MonoBehaviour
     {
         /*if (nextTimeToSeek < Time.time)
         {*/
-        Debug.Log("Seeking Target");
         target = GameObject.FindGameObjectWithTag("Player").transform;
         /*nextTimeToSeek = Time.time + seekDelay;
     }*/

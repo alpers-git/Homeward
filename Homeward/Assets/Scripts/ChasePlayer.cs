@@ -48,7 +48,6 @@ public class ChasePlayer : MonoBehaviour {
 
     public void FindTarget()
     {
-        Debug.Log("Finding Target");
         target = GameObject.FindGameObjectsWithTag("Player")[0];
         if (target==null)
         {

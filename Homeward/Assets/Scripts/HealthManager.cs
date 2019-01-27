@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
+    private const string GAME_MASTER_STRING = "GameMaster";
+
     public Image leftFull;
     public Image leftEmpty;
     public Image middleFull;
@@ -40,6 +42,10 @@ public class HealthManager : MonoBehaviour
         }
         if(health <= 0)
         {
+            if(!isHenry)
+            {
+                GameObject.Find(GAME_MASTER_STRING).GetComponent<GameManager>().Kill(gameObject);
+            }
             Destroy(gameObject);
         }
     }

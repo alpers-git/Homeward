@@ -5203,8 +5203,8 @@ GameObject:
   m_Component:
   - component: {fileID: 406981527}
   m_Layer: 0
-  m_Name: Door (1)
-  m_TagString: Untagged
+  m_Name: Door0
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5435,8 +5435,8 @@ GameObject:
   m_Component:
   - component: {fileID: 539703134}
   m_Layer: 0
-  m_Name: Door (2)
-  m_TagString: Untagged
+  m_Name: Door1
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10398,8 +10398,8 @@ GameObject:
   m_Component:
   - component: {fileID: 698509856}
   m_Layer: 0
-  m_Name: Door
-  m_TagString: Untagged
+  m_Name: Door2
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34916,8 +34916,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2044343591}
   m_Layer: 0
-  m_Name: Room2 1
-  m_TagString: Untagged
+  m_Name: Room4
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
