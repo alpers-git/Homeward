@@ -65,13 +65,11 @@ public class ShotgunChase : MonoBehaviour
                 gameObject.transform.Translate(direction * speed);
             }
         }
-
         if (Time.time >= nextTimeToFire)
         {
             nextTimeToFire = fireRate + Time.time + Random.Range(-fireRateRandomness, fireRateRandomness);
             Shoot();
         }
-
     }
 
     private void Update()

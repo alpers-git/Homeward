@@ -46,7 +46,6 @@ public class OpacityChanger : MonoBehaviour
         }
         newColor.a = alpha;
         image.color = newColor;
-        Debug.Log(image.color.a + " " + ascending);
     }
 
     public void StartAnimation(float start, float end, float low, float high, float step = 0)

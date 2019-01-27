@@ -16,11 +16,10 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        if ((other.gameObject.CompareTag("Player") && isAlienBullet) || (!other.gameObject.CompareTag("Player") && !isAlienBullet))
+        if ((other.gameObject.CompareTag("Player") && isAlienBullet) || (other.gameObject.CompareTag("Enemy") && !isAlienBullet))
         {
             other.GetComponent<HealthManager>().TakeDamage(damage);
             Destroy(gameObject);
-            Debug.Log("aaaa");
         }
     }
 }

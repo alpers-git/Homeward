@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Elbow
   - hud
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX

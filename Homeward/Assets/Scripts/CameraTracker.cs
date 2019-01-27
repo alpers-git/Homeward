@@ -28,7 +28,6 @@ public class CameraTracker : MonoBehaviour
         targetsLastPosition = target.position;
         transform.parent = null;
         initialDistance = - target.position + transform.position;
-        Debug.Log(initialDistance);
     }
 
     // Update is called once per frame

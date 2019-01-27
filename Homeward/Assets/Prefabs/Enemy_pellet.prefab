@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5166506798431360946}
   m_Layer: 0
   m_Name: Enemy_pellet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2738724076933325408}
   m_Layer: 0
   m_Name: Alien Enemy 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5edd0a24a7d41864aa587ce314a52543, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -154,7 +154,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c40ca25c461dd0e40a52a6227ac54de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hud: {fileID: 0}
+  leftFull: {fileID: 0}
+  leftEmpty: {fileID: 0}
+  middleFull: {fileID: 0}
+  middleEmpty: {fileID: 0}
+  rightFull: {fileID: 0}
+  rightEmpty: {fileID: 0}
+  isHenry: 0
+  invulTime: 0
+  gameOverUI: {fileID: 0}
   health: 9
 --- !u!136 &2738724076933325408
 CapsuleCollider:

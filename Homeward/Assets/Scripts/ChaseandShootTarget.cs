@@ -49,7 +49,7 @@ public class ChaseandShootTarget : MonoBehaviour
         {
             direction = (target.transform.position - gameObject.transform.position);
             direction.Normalize();
-            direction = Matrix4x4.Rotate(Quaternion.Euler(new Vector3(-30, 0, 0))) * new Vector4(direction.x, direction.y, direction.z, 1);
+            direction = Matrix4x4.Rotate(Quaternion.Euler(new Vector3(-30, 0, 0))) * new Vector4(direction.x, 0, direction.z, 1);
             gameObject.transform.Translate(direction * speed);
             //rb.velocity = (direction * speed) + (target.GetComponent<Rigidbody>().velocity);
             //rb.MovePosition(direction * speed);
@@ -64,13 +64,11 @@ public class ChaseandShootTarget : MonoBehaviour
                 gameObject.transform.Translate(direction * speed);
             }
         }
-
         if (Time.time >= nextTimeToFire)
         {
             nextTimeToFire = fireRate + Time.time + Random.Range(-fireRateRandomness, fireRateRandomness);
             Shoot();
         }
-
     }
 
     private void Update()
